@@ -8,6 +8,11 @@ def hello_world():
     return "<p>Hello, World!</p>"
 
 
+@app.route("/new")
+def new():
+    return "New Endpoint"
+
+
 @app.route("/get_sample_data", methods=["GET"])
 def get_sample_data():
     return {"test": True, "sample_data": {"data": 1, "message": "Hello World!"}}
